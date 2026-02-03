@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario de Adviento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="frame">
+    <h2> Calendario de frases  para osito</h2>
+    
+
+    <!-- CALENDARIO -->
+    <div class="windows" id="calendar"></div>
+  </div>
+  
+
+  <!-- 🔊 AUDIOS (IDs ÚNICOS) -->
+  <audio id="clickSound" src="Click.mp3" preload="auto"></audio>
+  <audio id="openSound" src="Click.mp3" preload="auto"></audio>
+  <audio id="specialSound" src="Click.mp3" preload="auto"></audio>
+  <audio id="bgMusic" src="Duki_-_Buscarte_Lejos_CeeNaija.com_.mp3" loop></audio>
+    <button id="muteBtn" class="mute-btn">🔊</button>
+
+  <!-- 💖 MENSAJE DE AMOR -->
+  <div id="loveMessage" class="love hidden">
+      <button id="closeLove" class="close-btn">✖</button>
+    <p id="loveText"></p>
+  </div>
+
+  <!-- 🎀 CAJITA CUTE -->
+  <div id="cuteBox" class="overlay hidden">
+    <div class="cute-box">
+      <div class="paper paper-back"></div>
+      <div class="paper paper-front"></div>
+
+      <button class="start-btn">start</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
