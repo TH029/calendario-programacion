@@ -23,3 +23,18 @@ Cada día revela una sorpresa inspirada en **Star Wars**, con mensajes poéticos
 ## ✨ Motivación
 Este calendario fue creado para celebrar **6 meses juntos**, combinando programación, arte y amor.  
 Cada detalle busca transmitir magia, alegría y un toque galáctico 🌠.
+
+
+
+### Como aplicación de escritorio (.exe)
+Este proyecto también puede ejecutarse como aplicación usando **Electron**.
+
+#### Requisitos
+- Tener instalado [Node.js](https://nodejs.org).
+- Instalar dependencias:
+```bash
+npm install
+
+npm start
+npx electron-packager . calendario --platform=win32 --arch=x64 --out=dist
+
